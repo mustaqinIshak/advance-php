@@ -13,7 +13,7 @@ Trim | echo "A" . trim ("B C D") . "E";
 Find | echo strstr($var, "word");
 Replace by string | echo str_replace("quick", "super-farst", $var);
 Repeat | echo str_repeat($var, 2);
-Make substring  | echo substr($var, 5, 10);
+Make substring (mengambil string dri index ke berapa sampai ke berapa)  | echo substr($var, 5, 10);
 Find position | echo strpos($var, "brown");
 Find character | echo strchr($var, "z");
  | 

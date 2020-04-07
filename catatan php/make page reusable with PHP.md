@@ -18,9 +18,10 @@ define("SHARED_PATH", PROJECTPATH."/shared");
 //define("WWW_ROOT", '/~grindpants/globe_bank/public');
 //define("WWW_ROOT", '');
 // * Can dynamically find everything in URL uip to "/public"
-$public_end = strpos($_server['SCRIPT_NAME'], '/PUBLIC') + 7;
-$doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end);
-define('WWW_ROOT', $doc_root);
+$public_end = strpos($_server['SCRIPT_NAME'], '/PUBLIC') + 7; //ini untuk mencari berapa panjang url project/public yg akan menreturn angka"
+//(7 di ambil dri panjang string "/public)
+$doc_root = substr($_SERVER['SCRIPT_NAME'], 0, $public_end); // ini untuk memotong url string server dan mengembalikan berupa string url "nama_project/public"
+define('WWW_ROOT', $doc_root); //membuat variabel baru
 
 require_once('function.php')
 ```
